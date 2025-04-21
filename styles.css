@@ -62,3 +62,35 @@ footer {
   font-size: 0.9rem;
   color: #ccc;
 }
+
+.associations-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.pricing-table th {
+  background-color: #444;
+  color: #f1c40f;
+}
+
+.pricing-table tr:nth-child(even) {
+  background-color: #333;
+}
