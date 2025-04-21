@@ -1,3 +1,4 @@
+
 /* Global Reset */
 * {
   margin: 0;
@@ -7,58 +8,120 @@
 
 /* Base Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   line-height: 1.6;
-  background: url('images/securelockni-logo.png') no-repeat center center fixed;
+  background: url('images/blueprint-bg.webp') no-repeat center center fixed;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
-  color: #fff;
+  color: #111;
   padding-bottom: 100px;
 }
 
-/* Shared Box Styling */
+/* Shared Box Styling with Floating Effect */
 header,
 section,
+form,
 footer {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 30px 20px;
   margin: 20px auto;
   border-radius: 6px;
   max-width: 1000px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Header Styling */
+/* Header */
 header {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
   text-align: center;
 }
 
-.logo {
-  width: 120px;
-  margin-bottom: 10px;
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
 }
 
-/* Section Styling */
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #f1c40f;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-ul {
-  list-style-type: square;
-  margin-left: 20px;
-  margin-bottom: 20px;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-a {
-  color: #1abc9c;
+/* Hero Section */
+#hero {
+  background: none;
+  text-align: center;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Section Defaults */
+#services, #about, #contact {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  background-color: #fff;
+  color: #111;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Footer */
 footer {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
   text-align: center;
-  font-size: 0.9rem;
-  color: #ccc;
+  margin-top: 60px;
+  padding: 15px;
+  border-radius: 0;
+}
+
+/* Blueprint SVG Container */
+.blueprint-container object {
+  max-height: 500px;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
